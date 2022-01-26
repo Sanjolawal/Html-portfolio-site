@@ -16,6 +16,9 @@ color: white;
 padding: 0 5% 0 5%;
 font-family: "prompt", sans-serif;
 }
+.navspan{
+    color: rgb(155, 126, 30);
+}
 nav ul{
     display: flex;
     justify-content: space-around;
@@ -105,6 +108,38 @@ Header ul li{
 
 
 /* Main section */
+
+main {
+    padding: 0 5vw 0 5vw;
+}
+main h1{
+    text-align: center;
+    font-size: 2.4vw;
+    margin: 3vh 0 0 0;
+}
+main p{
+    text-align: center;
+    font-size: 1.2vw;
+    margin: 1vh 0 0 0;
+}
+main section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    column-gap: normal;
+    margin: 4vh 0 0 0;
+    justify-items: center;
+}
+main section div{
+    border: 2px solid rgb(255, 255,255, 0.4);
+    width: 45%;
+    display: grid;
+    justify-items: center;
+    border-radius: 8px;
+    padding: 2vh 2vw 2vh 2vw;
+}
+.middle{
+background: rgb(71, 71, 112);
+}
 /* <Footer section */
 
 
