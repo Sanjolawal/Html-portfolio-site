@@ -76,7 +76,7 @@ Header article button{
 }
 Header article button:hover{
     color: black;
-    background: linear-gradient(to bottom, rgb(110, 82, 5)56%,rgb(226, 192, 122));
+    background: linear-gradient(to left, rgb(110, 82, 5)56%,rgb(226, 192, 122));
 }
 Header section video{
     width: 90%;
@@ -218,6 +218,7 @@ main menu img{
     width: 60%;
     display: grid;
     justify-self: center;
+    border-radius: 6px;
 }
 main menu div{
     display: grid;
@@ -228,9 +229,10 @@ main menu div{
     padding: 2vh 0 2vh 0;
     height: 66%;
     align-self: center;
+    font-family: 'prompt', sans-serif;
 }
 main menu h3{
-    font-size: 1.9vw;
+    font-size: 2.15vw;
     margin: 0 0 0 0;
     text-align: start;
 }
@@ -252,7 +254,64 @@ main menu button{
 }
 main menu button:hover{
     color: black;
-    background: linear-gradient(to bottom, rgb(110, 82, 5)56%,rgb(226, 192, 122));
+    background: linear-gradient(to left, rgb(110, 82, 5)56%,rgb(226, 192, 122));
+}
+.rev-box{
+/* background: red; */
+margin: 4vh 0 0 0;
+
+}
+.rev-h1{
+text-align: center;
+font-size: 2.4vw;
+margin: 0 0 0 0;
+font-family: "prompt", sans-serif;
+}
+.rev-p1{
+text-align: center;
+font-size: 1.3vw;
+margin: 0.4vh 0 0 0;
+font-family: "prompt",sans-serif;
+}
+.rev-main{
+    /* background:yellow ; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr 1fr 1fr);
+    justify-items: center;
+    margin: 4vh 0 4vh 0;
+}
+.rev-con{
+    width: 66%;
+    /* background: chartreuse; */
+    padding: 2vh 0 0 2vh;
+    display: grid;
+    border: 3px solid rgb(255, 255,255, 0.5);
+    border-radius: 6px;
+    align-items: center;  
+}
+.pic1{
+    width: 26%;
+    z-index: 100;
+}
+.star{
+    width: 30%;
+    margin: 0 0 0 0;
+    z-index: 0;
+}
+.rev-p2{
+font-size: 1.1vw;
+font-family: "prompt", sans-serif;
+opacity: 0.7;
+}
+h6{
+font-size: 1.4vw;
+font-family: "prompt",sans-serif;
+margin: 0 0 0 0;
+}
+.rev-p3{
+font-size: 1.3vw;
+font-family: "prompt",sans-serif;
+opacity: 0.7;
 }
 
 
@@ -345,5 +404,37 @@ main article div{
 }
 main article div h5, main article div h6{
     font-size: 3.8vw;
+}
+main menu{
+    grid-template-columns: repeat(1, 1fr);
+    /* background: red; */
+    justify-items: start;
+}
+main menu img{
+    width: 80%;
+    justify-self: start;
+}
+main menu div{
+    width: 90%;
+    height: 90%;
+    /* background: yellow; */
+    justify-items: center;
+    justify-self: start;
+    padding: 1vh 0 2vh 0;
+    margin: 4vh 0 2vh 0;
+}
+main menu h3{
+ font-size:4.8vw ;
+ text-align: center;
+}
+.menup{
+ font-size: 3.4vw;
+ text-align: center;
+}
+main menu button{
+width: 80%;
+font-size: 6.6vw;
+justify-self: center;
+margin: 0 0 2vh 0;
 }
 }
