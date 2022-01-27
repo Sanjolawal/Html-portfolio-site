@@ -168,10 +168,9 @@ main article{
     padding: 3vh 0 0 0;
 }
 main article div{
-    border: 3px solid rgb(255, 255,255, 0.5);
+    border: 3px solid rgb(255, 255,255, 0.3);
     border-radius: 6px;
     width: 70%;
-    height: 88%;
 }
 main article div img{
     width: 100%;
@@ -288,12 +287,13 @@ main article {
     /* background: red; */
     align-items: center;
     padding: 1vh 0 0 0;
-    margin: 0 0 0 0;
+    margin: 3vh 0 0 0;
 }
 main article div{
     width: 80%;
     /* background: chartreuse; */
-    margin: 0 0 0 0;
+    padding: 0 0 2vh 0;
+    margin: 0 0 5vh 0;
 }
 main article div h5, main article div h6{
     font-size: 3.8vw;
