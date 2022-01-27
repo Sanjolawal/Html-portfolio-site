@@ -208,7 +208,51 @@ font-family: "prompt",sans-serif;
 
 
 main menu{
+    margin: 5vh 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1.4fr);
+    /* background: red; */
+    justify-items: center;
+}
+main menu img{
+    width: 60%;
+    display: grid;
+    justify-self: center;
+}
+main menu div{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* background: yellow; */
+    justify-self: start;
+    padding: 2vh 0 2vh 0;
+    height: 66%;
+    align-self: center;
+}
+main menu h3{
+    font-size: 1.9vw;
     margin: 0 0 0 0;
+    text-align: start;
+}
+.menup{
+    text-align: start;
+    font-size: 1.2vw;
+    margin: 0 0 0 0;
+}
+main menu button{
+    font-size: 2.4vw;
+    width: 90%;
+    margin: 0 0 0 0;
+    display: grid;
+    justify-self: start;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: linear-gradient(to right,rgb(167, 115, 3)40%, rgb(168, 109, 8)28%, rgb(53, 53, 61));
+}
+main menu button:hover{
+    color: black;
+    background: linear-gradient(to bottom, rgb(110, 82, 5)56%,rgb(226, 192, 122));
 }
 
 
