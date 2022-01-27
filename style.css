@@ -171,6 +171,7 @@ main article div{
     border: 3px solid rgb(255, 255,255, 0.3);
     border-radius: 6px;
     width: 70%;
+    padding: 0 0 0.5vh 0;
 }
 main article div img{
     width: 100%;
@@ -193,6 +194,9 @@ font-family: "prompt",sans-serif;
   color: rgb(255, 255,255, 0.8);
   margin: 1vh 0 0 0.4vw;
   font-family: "prompt", sans-serif;
+}
+.pro-2{
+    margin: 1vh 0 2vh 0.4vw;
 }
 
  main article div a{
