@@ -283,7 +283,7 @@ font-family: "prompt",sans-serif;
 .rev-con{
     width: 66%;
     /* background: chartreuse; */
-    padding: 2vh 0 0 2vh;
+    padding: 2vh 0 2vh 0.6vw;
     display: grid;
     border: 3px solid rgb(255, 255,255, 0.5);
     border-radius: 6px;
@@ -314,8 +314,44 @@ font-family: "prompt",sans-serif;
 opacity: 0.7;
 }
 
-
 /* <Footer section */
+
+footer{
+    box-sizing: border-box;
+    color: white;
+    background: rgb(37, 40, 47);
+    padding: 0 5vw 0 10vw;
+    font-family: "prompt", sans-serif;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    column-gap: 5vw;
+}
+footer section p{
+    opacity: 0.7;
+}
+footer article{
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+}
+footer h1{
+    opacity: 0.9;
+}
+footer ul{
+    padding: 0 0 0 0 ;
+}
+footer li{
+    list-style: none;
+    opacity: 0.7;
+}
+footer menu{
+    /* background: red; */
+    width: 92.4vw;
+    margin: 0 0 0 -10vw;
+}
+footer menu p{
+    text-align: center;
+}
+
 
 
 
@@ -437,4 +473,34 @@ font-size: 6.6vw;
 justify-self: center;
 margin: 0 0 2vh 0;
 }
+
+.rev-main{
+    grid-template-columns: repeat(1, 1fr);
+}
+.rev-con{
+    margin: 0 0 3vh 0;
+    justify-items: center;
+}
+.rev-p2{
+font-size: 3.4vw;
+text-align: center;
+}
+h6{
+font-size: 4.6vw;
+}
+.rev-p3{
+font-size: 3.4vw;
+}
+ /* Footer section */
+
+footer{
+      grid-template-columns: 80vw;
+  }
+  footer article{
+      column-gap: 30vw;
+  }
+  footer menu{
+      margin: 0 0 0 -15.5vw;
+  }
+
 }
