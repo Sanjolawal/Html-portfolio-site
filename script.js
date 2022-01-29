@@ -136,7 +136,8 @@ let mobile2 = document.querySelector("#mobile2");
 let navg = document.querySelector("#navg");
 let closebar = document.querySelector(".closebar");
 let head = document.querySelector("#head");
-console.log(head);
+let video1 = document.querySelector("#video1");
+console.log(video);
 
 menu.addEventListener("click", Show);
 
@@ -174,3 +175,29 @@ function Hide() {
   Body.style.height = "";
   Body.style.overflowY = "visible";
 }
+
+
+  // video intro
+
+window.setTimeout(function () {
+  Body.style.height = "100%";
+  Body.style.overflow = "hidden";
+  Body.style.background = "black";
+  navg.style.display = 'none'
+  head.style.display = 'none'
+}, 5);
+
+
+ window.setTimeout(
+   function () {
+     video1.style.display = "none"
+     Body.style.height = "";
+     Body.style.overflow = "visible";
+     navg.style.display = "";
+     head.style.display = "";
+     Body.style.background = "";
+   }
+   , 7200)
+
+
+   
