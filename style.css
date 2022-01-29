@@ -63,7 +63,12 @@ nav div {
 nav button {
   display: none;
 }
-.blur-gr,.blur-gr1,.blur-gr2,.blur-gr3,.blur-gr4,.blur-gr5 {
+.blur-gr,
+.blur-gr1,
+.blur-gr2,
+.blur-gr3,
+.blur-gr4,
+.blur-gr5 {
   position: absolute;
   top: 8vh;
   height: 50%;
@@ -77,33 +82,33 @@ nav button {
   );
   filter: blur(70px);
 }
-.blur-gr1{
+.blur-gr1 {
   top: 60%;
   width: 12%;
   height: 260%;
 }
-.blur-gr2{
+.blur-gr2 {
   top: 50%;
   left: 30%;
   width: 50%;
   height: 90%;
 }
-.blur-gr3{
- top: 150%;
- left: 50%;
- width: 50%;
+.blur-gr3 {
+  top: 150%;
+  left: 50%;
+  width: 50%;
 }
-.blur-gr4{
- top: 230%;
- left: 80%;
- width: 20%;
- height: 90%;
+.blur-gr4 {
+  top: 230%;
+  left: 80%;
+  width: 20%;
+  height: 90%;
 }
-.blur-gr5{
- top: 280%;
- left: 30%;
- width: 60%;
- height: 50%;
+.blur-gr5 {
+  top: 280%;
+  left: 30%;
+  width: 60%;
+  height: 50%;
 }
 
 /* Header section */
@@ -474,25 +479,36 @@ footer menu p {
   nav button {
     margin: 2vh 0 0 3vw;
   }
-  .blur-gr,.blur-gr1,.blur-gr2,.blur-gr3,.blur-gr4,.blur-gr5 {
+  .blur-gr,
+  .blur-gr1,
+  .blur-gr2,
+  .blur-gr3,
+  .blur-gr4,
+  .blur-gr5 {
     display: block;
   }
-  .blur-gr{
+  .blur-gr {
     position: absolute;
     top: 4vh;
     left: 32vw;
     height: 30%;
     width: 40%;
   }
-  .blur-gr4{
+  .blur-gr3 {
+    top: 150%;
+    left: 10%;
+    width: 50%;
+  }
+ 
+  .blur-gr4 {
     position: absolute;
     top: 460%;
-    left: 0vw;
+    left: 0%;
   }
-  .blur-gr5{
+  .blur-gr5 {
     position: absolute;
     top: 555%;
-    left: 40%;
+    left: 10%;
   }
   /* Header sectio */
   Header section {
