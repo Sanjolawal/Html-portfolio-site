@@ -10,36 +10,44 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>OluwaSanjo's portfolio</title>
   </head>
   <body>
     <!-- Navbar section -->
-    <nav>
-      <img src="./Images/logo.jpg" alt="pic" id="logo" class="seclogo"/>
-      <ul>
+    <nav id="navg"  >
+      <img src="./Images/logo.jpg" alt="pic" id="logo" class="seclogo"  data-aos="zoom-out-up" data-aos-once="true"/>
+      <ul id="mobile">
         <li id="nav" class="nav1">About</li>
         <li id="nav" class="nav2">Portfolio</li>
         <li id="nav" class="nav3">Testimonials</li>
         <a href="Blog.html"> <li id="nav">Blog</li> </a>
       </ul>
-      <div>
+      <div id="mobile1">
         <a href="https://github.com/Sanjolawal">
           <img src="Images/github.svg" alt="" id="github"
         /></a>
         <a href="https://linkedin.com/in/Sanjolawal">
           <img src="Images/linkedin.svg" alt="" id="linkedin"
         /></a>
-       <img src="Images/sunlight.png" alt="" class="sun"/>
-       <img src="Images/icons8-moon-36.png" alt="" class="moon"/>
+        <img src="Images/sunlight.png" alt="" class="sun" />
+        <img src="Images/icons8-moon-36.png" alt="" class="moon" />
       </div>
-      <img src="images/menu-bar.svg" alt="" class="menubar"/>
-      <button>Hire me</button>
+      <img src="images/menu-bar.svg" alt="" class="menubar" data-aos="slide-left"    data-aos-once="true" />
+      <img src="images/close-btn.svg" alt="" class="closebar" data-aos="slide-left"  data-aos-once="true"  />
+      <button id="mobile2"  >Hire me</button>
+      <div class="blur-gr"></div>
+      <div class="blur-gr1"></div>
+      <div class="blur-gr2"></div>
+      <div class="blur-gr3"></div>
+      <div class="blur-gr4"></div>  
+      <div class="blur-gr5"></div>      
     </nav>
 
     <!-- Header section -->
-    <header>
+    <header id="head" >
       <section>
-        <article>
+        <article  data-aos="zoom-in-down"  data-aos-once="true">
           <h1>
             I'm Sanjo Saheed Lawal,<br />
             <span class="navspan">
@@ -54,9 +62,9 @@
           </p>
           <button>Hire me</button>
         </article>
-        <video src="" controls id="video"></video>
+        <video src="" controls id="video"  data-aos="zoom-in-down"  data-aos-once="true"></video>
       </section>
-      <ul>
+      <ul data-aos="slide-up"  data-aos-once="true">
         <li>Reactjs</li>
         <li>Tailwindcss</li>
         <li>Javascript</li>
@@ -72,16 +80,16 @@
         Loves to develop stunning designs, using maintanable and scalable codes
         standard
       </p>
-      <section>
-        <div id="service">
-          <img src="Images/cons-icon.png" alt="pic" id="consult"/>
+      <section  >
+        <div id="service"  data-aos="zoom-in-down"  data-aos-once="true">
+          <img src="Images/cons-icon.png" alt="pic" id="consult" />
           <h4>Consultation</h4>
           <p class="sectionp">
             Have an insane idea in mind, doubting if possible, do not know how,
             and when to implement, inbox to gain clarity
           </p>
         </div>
-        <div class="middle" id="service">
+        <div class="middle" id="service"  data-aos="fade-up" data-aos-once = "true">
           <img src="Images/Des-icon.png" alt="pic" />
           <h4>Design</h4>
           <p class="sectionp">
@@ -90,7 +98,7 @@
           </p>
         </div>
         <div id="service">
-          <img src="Images/dev icon.svg" alt="pic" id="dev" />
+          <img src="Images/dev icon.svg" alt="pic" id="dev"  data-aos="zoom-in-down"  data-aos-once="true"/>
           <h4>Development</h4>
           <p class="sectionp">
             Convert your ideas, into readable, maintanable and well formatted
@@ -99,10 +107,10 @@
         </div>
       </section>
 
-      <h2>My latest <span class="navspan">Projects</span></h2>
+      <h2 id="projects">My latest <span class="navspan">Projects</span></h2>
       <p class="articlep">All were built with codes standard in mind</p>
       <article>
-        <div id="project">
+        <div id="project" data-aos="fade-up"  data-aos-once="true">
           <img src="Images/pro-1.png" alt="" />
           <h5>New year landing page</h5>
           <h6><span class="navspan">By </span>OluwaSanjo</h6>
@@ -113,8 +121,8 @@
             ><p class="pro-2" id="two">View on github</p></a
           >
         </div>
-        <div  id="project" >
-          <img src="Images/pro-1.png" alt="" />
+        <div id="project" data-aos="slide-up" data-aos-once="true" >
+          <img src="Images/pro-1.png" alt=""  />
           <h5>New year landing page</h5>
           <h6><span class="navspan">By </span>OluwaSanjo</h6>
           <a href="https://sanjolawal.netlify.app"
@@ -123,9 +131,9 @@
           <a href="https://github.com/Sanjolawal/sanjo.github.io">
             <p class="pro-2" id="two">View on github</p></a
           >
-        </div>
-        <div id="project"  >
-          <img src="Images/pro-1.png" alt="" />
+        </div data-aos="zoom-up" data-aos-once="true" >
+        <div id="project">
+          <img src="Images/pro-1.png" alt=""  data-aos="zoom-in-up" data-aos-once="true"/>
           <h5>New year landing page</h5>
           <h6><span class="navspan">By </span>OluwaSanjo</h6>
           <a href="https://sanjolawal.netlify.app"
@@ -137,8 +145,8 @@
         </div>
       </article>
 
-      <menu>
-        <img src="Images/profile.png" alt="pic" />
+      <menu id="about">
+        <img src="Images/profile.png" alt="pic" data-aos="fade-down"  data-aos-once="true"/>
         <div>
           <h3>Why hire me for your <span class="navspan">Projects</span></h3>
           <p class="menup">
@@ -151,7 +159,7 @@
       </menu>
     </main>
 
-    <div class="rev-box">
+    <div class="rev-box" id="reviews">
       <h1 class="rev-h1">This Is Why I Do What I Do</h1>
       <p class="rev-p1">
         Loves to develop things, that makes life easier and worth living
@@ -168,7 +176,7 @@
           <p class="rev-p3">CFO of Armydollar</p>
         </div>
 
-        <div class="rev-con">
+        <div class="rev-con" data-aos="slide-left"  data-aos-once="true" >
           <img src="Images/rev-2.png" alt="pic" class="pic1" /><br />
           <img src="Images/5stars.png" alt="pic" class="star" />
           <p class="rev-p2">Great working with him</p>
@@ -192,14 +200,14 @@
 
     <footer>
       <section>
-        <img src="Images/4.jpg" alt="pic" />
+        <img src="Images/4.jpg" alt="pic"  data-aos="zoom-in-down" data-aos-once="true" />
         <p>Give your projects to the very best-without worrying about bugs</p>
         <img src="Images/github.svg" alt="pic" />
         <img src="Images/linkedin.svg" alt="pic" />
       </section>
 
       <article>
-        <div>
+        <div data-aos="zoom-in-up"  data-aos-once="true" >
           <h1>Features</h1>
           <ul>
             <li>Consultation</li>
@@ -207,7 +215,7 @@
             <li>Development</li>
           </ul>
         </div>
-        <div>
+        <div  data-aos="fade-down"  data-aos-once="true" >
           <h1>About</h1>
           <ul>
             <li>Blog</li>
@@ -220,10 +228,15 @@
       </article>
       <menu>
         <hr />
-        <p>© OLUWASANJO 2022 | All rights reserved.</p>
+        <p  data-aos="slide-right"  data-aos-once="true" >© OLUWASANJO 2022 | All rights reserved.</p>
       </menu>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+      );
+    </script>
   </body>
 </html>

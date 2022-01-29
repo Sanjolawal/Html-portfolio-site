@@ -4,9 +4,10 @@ body {
   margin: 0;
   padding: 0%;
   color: rgb(255, 255, 255, 1);
+  overflow-x: hidden;
 }
-html{
-   scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* Navbar section */
@@ -45,18 +46,64 @@ nav div {
   display: flex;
   justify-content: space-around;
 }
-.sun,.moon{
-  width:10%;
+.sun,
+.moon {
+  width: 10%;
 }
-.moon{
+.moon {
   display: none;
 }
 .menubar {
-  visibility: hidden;
+  display: none;
+}
+.closebar {
+  display: none;
 }
 
 nav button {
   display: none;
+}
+.blur-gr,.blur-gr1,.blur-gr2,.blur-gr3,.blur-gr4,.blur-gr5 {
+  position: absolute;
+  top: 8vh;
+  height: 50%;
+  left: 0vw;
+  width: 30%;
+  background: linear-gradient(
+    to bottom,
+    rgb(152, 173, 44, 0.2) 30%,
+    rgb(62, 199, 187, 0.1) 25%,
+    rgb(11, 235, 255, 0.2)
+  );
+  filter: blur(70px);
+}
+.blur-gr1{
+  top: 60%;
+  width: 12%;
+  height: 260%;
+}
+.blur-gr2{
+  top: 50%;
+  left: 30%;
+  width: 50%;
+  height: 90%;
+}
+.blur-gr3{
+ top: 150%;
+ left: 50%;
+ width: 50%;
+}
+.blur-gr4{
+ top: 230%;
+ left: 80%;
+ width: 20%;
+ height: 90%;
+}
+.blur-gr5{
+ top: 280%;
+ left: 30%;
+ width: 60%;
+ height: 50%;
 }
 
 /* Header section */
@@ -386,11 +433,15 @@ footer menu p {
 @media all and (max-width: 700px) {
   /* Navbar sectiom */
 
-  nav,
-  nav ul,
-  nav div {
+  nav {
     display: block;
     margin: 0%;
+    padding: 0 0 2vh 5%;
+  }
+  nav ul,
+  nav div,
+  nav button {
+    display: none;
   }
   nav ul {
     padding: 0;
@@ -399,24 +450,49 @@ footer menu p {
   nav ul li {
     margin: 0 0 1.6vh 0;
   }
-  .sun,.moon {
+  .sun,
+  .moon {
     width: 6.4%;
     margin: 0 0 0.7vh 0;
   }
-  .menubar {
+  .menubar,
+  .closebar {
     position: absolute;
     top: 3vh;
     right: 5%;
-    visibility: visible;
+    display: block;
   }
-  .menubar:hover {
+  .closebar {
+    display: none;
+  }
+  .menubar:hover,
+  .closebar:hover {
     border-radius: 5px;
     border: 2px solid rgb(255, 255, 255, 0.3);
   }
 
   nav button {
-    display: block;
     margin: 2vh 0 0 3vw;
+  }
+  .blur-gr,.blur-gr1,.blur-gr2,.blur-gr3,.blur-gr4,.blur-gr5 {
+    display: block;
+  }
+  .blur-gr{
+    position: absolute;
+    top: 4vh;
+    left: 32vw;
+    height: 30%;
+    width: 40%;
+  }
+  .blur-gr4{
+    position: absolute;
+    top: 460%;
+    left: 0vw;
+  }
+  .blur-gr5{
+    position: absolute;
+    top: 555%;
+    left: 40%;
   }
   /* Header sectio */
   Header section {

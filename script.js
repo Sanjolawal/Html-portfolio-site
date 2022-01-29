@@ -1,4 +1,4 @@
-  //  Darkness to Sunlight
+//  Darkness to Sunlight
 
 let Sun = document.querySelector(".sun");
 let moon = document.querySelector(".moon");
@@ -58,8 +58,7 @@ function Light() {
 
 Sun.addEventListener("click", Light);
 
-
-  // Light to darkness
+// Light to darkness
 
 function Dark() {
   Body.style.background = "rgb(24,24,24)";
@@ -95,17 +94,83 @@ function Dark() {
 
 moon.addEventListener("click", Dark);
 
-
 // Scrolling to respective area when nav btn is clicked
 
-let nav1 = document.querySelector(".nav1")
-let nav2 = document.querySelector(".nav2")
-let nav3 = document.querySelector(".nav3")
-console.log(nav1)
+let nav1 = document.querySelector(".nav1");
+let nav2 = document.querySelector(".nav2");
+let nav3 = document.querySelector(".nav3");
+let about = document.querySelector("#about");
+let projects = document.querySelector("#projects");
+let reviews = document.querySelector("#reviews");
+console.log(about.getBoundingClientRect());
 
-nav1.addEventListener("click", scroll)
+nav1.addEventListener("click", Scroll);
+nav2.addEventListener("click", Scrolling);
+nav3.addEventListener("click", Scrolled);
 // function scroll() {
 //   scrollTo(0, 1770)
 //   console.log("you")
 // }
+function Scroll() {
+  scrollTo(0, about.getBoundingClientRect().top);
+  Body.style.height = "";
+  Body.style.overflowY = "visible";
+}
 
+function Scrolling() {
+  scrollTo(0, projects.getBoundingClientRect().top);
+  Body.style.height = "";
+  Body.style.overflowY = "visible";
+}
+
+function Scrolled() {
+  scrollTo(0, reviews.getBoundingClientRect().top);
+  Body.style.height = "";
+  Body.style.overflowY = "visible";
+}
+
+// Hamburger menu function
+let mobile = document.querySelector("#mobile");
+let mobile1 = document.querySelector("#mobile1");
+let mobile2 = document.querySelector("#mobile2");
+let navg = document.querySelector("#navg");
+let closebar = document.querySelector(".closebar");
+let head = document.querySelector("#head");
+console.log(head);
+
+menu.addEventListener("click", Show);
+
+function Show() {
+  mobile.style.display = "block";
+  mobile1.style.display = "block";
+  mobile2.style.display = "block";
+  menu.style.display = "none";
+  closebar.style.display = "block";
+  navg.style.borderBottom = "2px solid rgb(255,255,255,0.1)";
+  Body.style.height = "100vh";
+  Body.style.overflowY = "hidden";
+}
+
+closebar.addEventListener("click", Hide);
+function Hide() {
+  mobile.style.display = "none";
+  mobile1.style.display = "none";
+  mobile2.style.display = "none";
+  menu.style.display = "block";
+  closebar.style.display = "none";
+  navg.style.borderBottom = "none";
+  Body.style.height = "";
+  Body.style.overflowY = "visible";
+}
+
+head.addEventListener("click", Hide);
+function Hide() {
+  mobile.style.display = "none";
+  mobile1.style.display = "none";
+  mobile2.style.display = "none";
+  menu.style.display = "block";
+  closebar.style.display = "none";
+  navg.style.borderBottom = "none";
+  Body.style.height = "";
+  Body.style.overflowY = "visible";
+}
