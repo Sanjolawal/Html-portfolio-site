@@ -496,8 +496,8 @@ footer menu p {
   }
   .blur-gr3 {
     top: 150%;
-    left: 10%;
-    width: 50%;
+    /* left: 10%;
+    width: 50%; */
   }
  
   .blur-gr4 {
@@ -508,7 +508,7 @@ footer menu p {
   .blur-gr5 {
     position: absolute;
     top: 555%;
-    left: 10%;
+    left: 20%;
   }
   /* Header sectio */
   Header section {
