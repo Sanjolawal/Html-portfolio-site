@@ -5,6 +5,9 @@ body {
   padding: 0%;
   color: rgb(255, 255, 255, 1);
 }
+html{
+   scroll-behavior: smooth;
+}
 
 /* Navbar section */
 nav {
@@ -42,8 +45,11 @@ nav div {
   display: flex;
   justify-content: space-around;
 }
-.sun{
+.sun,.moon{
   width:10%;
+}
+.moon{
+  display: none;
 }
 .menubar {
   visibility: hidden;
@@ -393,7 +399,7 @@ footer menu p {
   nav ul li {
     margin: 0 0 1.6vh 0;
   }
-  .sun {
+  .sun,.moon {
     width: 6.4%;
     margin: 0 0 0.7vh 0;
   }
