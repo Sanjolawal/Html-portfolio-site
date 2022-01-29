@@ -119,33 +119,33 @@ function Scroll() {
   scrollTo(0, about.getBoundingClientRect().top);
   Body.style.height = "";
   Body.style.overflowY = "visible";
-  mobile.style.display = "none";
-  mobile1.style.display = "none";
-  mobile2.style.display = "none";
-  menu.style.display = "none";
-  navg.style.borderBottom = ''
+  // mobile.style.display = "none";
+  // mobile1.style.display = "none";
+  // mobile2.style.display = "none";
+  // menu.style.display = "none";
+  // navg.style.borderBottom = ''
 }
 
 function Scrolling() {
   scrollTo(0, projects.getBoundingClientRect().top);
   Body.style.height = "";
   Body.style.overflowY = "visible";
-  mobile.style.display = "none";
-  mobile1.style.display = "none";
-  mobile2.style.display = "none";
-  menu.style.display = "none";
-  navg.style.borderBottom = "";
+  // mobile.style.display = "none";
+  // mobile1.style.display = "none";
+  // mobile2.style.display = "none";
+  // menu.style.display = "none";
+  // navg.style.borderBottom = "";
 }
 
 function Scrolled() {
   scrollTo(0, reviews.getBoundingClientRect().top);
   Body.style.height = "";
   Body.style.overflowY = "visible";
-  mobile.style.display = "none";
-  mobile1.style.display = "none"
-  mobile2.style.display = "none";
-  menu.style.display = "none";
-  navg.style.borderBottom = "";
+  // mobile.style.display = "none";
+  // mobile1.style.display = "none"
+  // mobile2.style.display = "none";
+  // menu.style.display = "none";
+  // navg.style.borderBottom = "";
 }
 
 // Hamburger menu function
@@ -209,4 +209,4 @@ window.setTimeout(function () {
   navg.style.display = "";
   head.style.display = "";
   Body.style.background = "";
-}, 7200);
+}, 7000);

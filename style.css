@@ -153,6 +153,10 @@ nav button {
     rgb(53, 53, 61)
   );
 }
+Header button a{
+  color: white; 
+  text-decoration: none;
+}
 Header article button:hover,
 nav button:hover {
   color: black;
@@ -341,6 +345,10 @@ main menu button {
     rgb(168, 109, 8) 28%,
     rgb(53, 53, 61)
   );
+}
+main menu button a{
+  color: white;
+  text-decoration: none;
 }
 main menu button:hover {
   color: black;
