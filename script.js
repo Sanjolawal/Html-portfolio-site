@@ -17,6 +17,10 @@ let consult = document.querySelector("#consult");
 let dev = document.querySelector("#dev");
 let seclogo = document.querySelector(".seclogo");
 let menu = document.querySelector(".menubar");
+let navg = document.querySelector("#navg");
+let mobile = document.querySelector("#mobile");
+let mobile1 = document.querySelector("#mobile1");
+let mobile2 = document.querySelector("#mobile2");
 
 console.log(Sun);
 console.log(Body);
@@ -115,25 +119,37 @@ function Scroll() {
   scrollTo(0, about.getBoundingClientRect().top);
   Body.style.height = "";
   Body.style.overflowY = "visible";
+  mobile.style.display = "none";
+  mobile1.style.display = "none";
+  mobile2.style.display = "none";
+  menu.style.display = "none";
+  navg.style.borderBottom = ''
 }
 
 function Scrolling() {
   scrollTo(0, projects.getBoundingClientRect().top);
   Body.style.height = "";
   Body.style.overflowY = "visible";
+  mobile.style.display = "none";
+  mobile1.style.display = "none";
+  mobile2.style.display = "none";
+  menu.style.display = "none";
+  navg.style.borderBottom = "";
 }
 
 function Scrolled() {
   scrollTo(0, reviews.getBoundingClientRect().top);
   Body.style.height = "";
   Body.style.overflowY = "visible";
+  mobile.style.display = "none";
+  mobile1.style.display = "none"
+  mobile2.style.display = "none";
+  menu.style.display = "none";
+  navg.style.borderBottom = "";
 }
 
 // Hamburger menu function
-let mobile = document.querySelector("#mobile");
-let mobile1 = document.querySelector("#mobile1");
-let mobile2 = document.querySelector("#mobile2");
-let navg = document.querySelector("#navg");
+// let navg = document.querySelector("#navg");
 let closebar = document.querySelector(".closebar");
 let head = document.querySelector("#head");
 let video1 = document.querySelector("#video1");
@@ -176,28 +192,21 @@ function Hide() {
   Body.style.overflowY = "visible";
 }
 
-
-  // video intro
+// video intro
 
 window.setTimeout(function () {
   Body.style.height = "100%";
   Body.style.overflow = "hidden";
   Body.style.background = "black";
-  navg.style.display = 'none'
-  head.style.display = 'none'
+  navg.style.display = "none";
+  head.style.display = "none";
 }, 5);
 
-
- window.setTimeout(
-   function () {
-     video1.style.display = "none"
-     Body.style.height = "";
-     Body.style.overflow = "visible";
-     navg.style.display = "";
-     head.style.display = "";
-     Body.style.background = "";
-   }
-   , 7200)
-
-
-   
+window.setTimeout(function () {
+  video1.style.display = "none";
+  Body.style.height = "";
+  Body.style.overflow = "visible";
+  navg.style.display = "";
+  head.style.display = "";
+  Body.style.background = "";
+}, 7200);
