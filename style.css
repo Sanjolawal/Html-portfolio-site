@@ -68,7 +68,7 @@ nav button {
 .blur-gr2,
 .blur-gr3,
 .blur-gr4,
-.blur-gr5 {
+.blur-gr5 { 
   position: absolute;
   top: 8vh;
   height: 50%;
@@ -93,7 +93,7 @@ nav button {
   width: 50%;
   height: 90%;
 }
-.blur-gr3 {
+ .blur-gr3 {
   top: 150%;
   left: 50%;
   width: 50%;
@@ -109,7 +109,7 @@ nav button {
   left: 30%;
   width: 60%;
   height: 50%;
-}
+} 
 
 /* Header section */
 Header {
@@ -433,6 +433,21 @@ footer menu {
 }
 footer menu p {
   text-align: center;
+}
+@media all and (max-width:1500px)
+{
+  .blur-gr1{
+    height: 100%;
+  }
+  .blur-gr3 {
+ display: none;
+}
+.blur-gr4 {
+ display: none;
+}
+.blur-gr5 {
+ display: none;
+} 
 }
 
 @media all and (max-width: 700px) {
