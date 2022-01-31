@@ -264,6 +264,8 @@ main article div {
 main article div img {
   width: 100%;
   height: 60%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 main article div h5 {
   padding: 0 0 0 0.4vw;
