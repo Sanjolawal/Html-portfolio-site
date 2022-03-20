@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact me</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-                   <!-- Contact form page -->
-   <div class="form">
-                  
-                   <h1>Contact Me</h1>
-    <form action="" method="post">
-     <input type="text" name="Surname" placeholder="Surname" required id="Surname"><br><br>
-     <input type="text" name="Name" placeholder="Name" required id="name"><br><br>
-     <input type="email" name="Email" placeholder="Email" required id="email"><br><br>
-     <textarea placeholder="How I may be of service" id="info"></textarea><br><br>
-     <button type="submit" id="submit">Submit</button>
-    </form>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Contact form page -->
+    <div class="form">
+      <h1>Contact Me</h1>
+      <form method="post" onclick="Sendmail">
+        <input
+          type="text"
+          name="Surname"
+          placeholder="Surname"
+          required
+          id="Surname"
+        /><br /><br />
+        <input
+          type="text"
+          name="Name"
+          placeholder="Name"
+          required
+          id="name"
+        /><br /><br />
+        <input
+          type="email"
+          name="Email"
+          placeholder="Email"
+          required
+          id="email"
+        /><br /><br />
+        <textarea placeholder="How I may be of service" id="info"></textarea
+        ><br /><br />
+        <button id="submit" type="submit">Submit</button>
+      </form>
     </div>
 
-
-    <script src="script2.js"></script>
+    <!-- <script src="script2.js"></script> -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-</body>
+    <script>
+      let name = document.getElementById("Surname").value;
+      let name1 = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let info = document.getElementById("info").value;
+      let Submit = document.getElementById("submit");
+      console.log(Submit);
+
+      function Sendmail(e) {
+        e.preventDefault();
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "sanjolawal600@gmail.com",
+          password: "chzuaqfstnaeyqyy",
+          To: "sanjolawal600@gmail.com",
+          From: "sanjolawal600@gmail.com",
+          Subject: name1 + "sent you a message",
+          Body: "Email :" + email < br > info,
+        }).then((message) => alert((message = "message sent succesfully")));
+      }
+    </script>
+  </body>
 </html>
