@@ -5,7 +5,7 @@
 
 
 ## Challenges:
-  Had a hard time, making the 3 cards mobile responsive, that i had to re-developed from scratch.
+  Had a hard time, making the 3 cards mobile responsive, that i re-developed from scratch.
   
 ## Wins
     Was able to really understood responsiveness with the card problem, now i have good grasp of some advanced 
